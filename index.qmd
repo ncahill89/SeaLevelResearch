@@ -1,0 +1,14 @@
+---
+title: " ExStrEAms"
+format:
+  html:
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+
+reslr: An R package for relative sea level modelling, Maeve Upton,[reslr package](https://maeveupton.github.io/reslr/)  [Workshop Materials](https://drive.google.com/drive/folders/1O5wkqUyeNZbEw7XuR7UWGELwwWK9kBNY?usp=sharing)  
+
+ geslaR & Extremes Analysis in R, Fernando Mayer, [geslaR package](https://eireextremes.github.io/geslaR/), [Workshop Materials](https://fernandomayer.notion.site/Introduction-to-INLA-1faa313a65a5806ab06edc559f560286)
+                                                                                                                   
+------------------------------------------------------------------------

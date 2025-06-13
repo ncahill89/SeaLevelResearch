@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "ExStrEAms"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    link-external-icon: true
+    link-external-newwindow: true
+
+
+editor: visual
+
