@@ -74,6 +74,16 @@ The `geslaR` package provides streamlined access and tools to work with GESLA (G
 
 ## Key Publications
 
+### reslr: An R Package for Relative Sea Level Modelling
+
+- **Citation:** Maeve Upton, Andrew Parnell, Niamh Cahill, "reslr: An R Package for Relative Sea Level Modelling", The R Journal, 2025
+
+- **Summary:** An R package to perform Bayesian modelling of relative sea level data. Includes a variety of different statistical models previously proposed in the literature, with a unifying framework for loading data, fitting models, and summarising the results. 
+
+Check out the [paper](https://journal.r-project.org/articles/RJ-2024-018/)
+
+---
+
 ### A noisy-input generalized additive model for relative sea-level change 
 
 - **Citation:** Maeve Upton, Andrew Parnell, Andrew Kemp, Erica Ashe, Gerard McCarthy, Niamh Cahill, A noisy-input generalized additive model for relative sea-level change along the Atlantic coast of North America, Journal of the Royal Statistical Society Series C: Applied Statistics, Volume 74, Issue 1, January 2025, Pages 34–82, https://doi.org/10.1093/jrsssc/qlae044
@@ -85,15 +95,6 @@ Check out the [paper](https://academic.oup.com/jrsssc/article/74/1/34/7756353#49
 
 ---
 
-### reslr: An R Package for Relative Sea Level Modelling
-
-- **Citation:** Maeve Upton, Andrew Parnell, Niamh Cahill, "reslr: An R Package for Relative Sea Level Modelling", The R Journal, 2025
-
-- **Summary:** An R package to perform Bayesian modelling of relative sea level data. Includes a variety of different statistical models previously proposed in the literature, with a unifying framework for loading data, fitting models, and summarising the results. 
-
-Check out the [paper](https://journal.r-project.org/articles/RJ-2024-018/)
-
----
 
 ### Two Centuries of Relative Sea-Level Rise in Dublin, Ireland
 
@@ -105,6 +106,16 @@ Check out the [paper](https://openquaternary.com/articles/10.5334/oq.121)
 
 ---
 
+### Global survey shows planners use widely varying sea-level rise projections for coastal adaptation
+
+- **Citation:** Hirschfeld, D., Behar, D., Nicholls, R.J., Cahill, N. et al. Global survey shows planners use widely varying sea-level rise projections for coastal adaptation. Commun Earth Environ 4, 102 (2023). https://doi.org/10.1038/s43247-023-00703-x
+
+- **Summary:** Including sea-level rise (SLR) projections in planning and implementing coastal adaptation is crucial. Here we analyze the first global survey on the use of SLR projections for 2050 and 2100. Two-hundred and fifty-three coastal practitioners engaged in adaptation/planning from 49 countries provided complete answers to the survey which was distributed in nine languages – Arabic, Chinese, English, French, Hebrew, Japanese, Korean, Portuguese and Spanish. While recognition of the threat of SLR is almost universal, only 72% of respondents currently utilize SLR projections. Generally, developing countries have lower levels of utilization. There is no global standard in the use of SLR projections: for locations using a standard data structure, 53% are planning using a single projection, while the remainder are using multiple projections, with 13% considering a low-probability high-end scenario. Countries with histories of adaptation and consistent national support show greater assimilation of SLR projections into adaptation decisions. This research provides new insights about current planning practices and can inform important ongoing efforts on the application of the science that is essential to the promotion of effective adaptation.
+
+Check out the [paper](https://www.nature.com/articles/s43247-023-00703-x)
+
+
+---
 ### A Bayesian time series model for reconstructing hydroclimate 
 
 - **Citation:** Cahill, N., Croke, J., Campbell, M., Hughes, K., Vitkovsky, J., Kilgallen, J. E., & Parnell, A. (2023). A Bayesian time series model for reconstructing hydroclimate from multiple proxies. Environmetrics, 34(4), e2786. https://doi.org/10.1002/env.2786
