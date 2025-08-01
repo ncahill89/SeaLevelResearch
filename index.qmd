@@ -114,8 +114,8 @@ Check out the [paper](https://openquaternary.com/articles/10.5334/oq.121)
 
 Check out the [paper](https://www.nature.com/articles/s43247-023-00703-x)
 
-
 ---
+
 ### A Bayesian time series model for reconstructing hydroclimate 
 
 - **Citation:** Cahill, N., Croke, J., Campbell, M., Hughes, K., Vitkovsky, J., Kilgallen, J. E., & Parnell, A. (2023). A Bayesian time series model for reconstructing hydroclimate from multiple proxies. Environmetrics, 34(4), e2786. https://doi.org/10.1002/env.2786
