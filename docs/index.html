@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ExStrEAms – ExStrEAms</title>
+<title>ExStrEAms: Extreme Sea Level and Surge Analysis Resources – ExStrEAms</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -100,23 +100,53 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#interactive-tools" id="toc-interactive-tools" class="nav-link active" data-scroll-target="#interactive-tools">Interactive Tools</a>
+  <ul class="collapse">
+  <li><a href="#ireland-surge-analysis-tool" id="toc-ireland-surge-analysis-tool" class="nav-link" data-scroll-target="#ireland-surge-analysis-tool">Ireland Surge Analysis Tool</a></li>
+  <li><a href="#geslar-data-viewer-analysis-tool" id="toc-geslar-data-viewer-analysis-tool" class="nav-link" data-scroll-target="#geslar-data-viewer-analysis-tool">geslaR Data Viewer &amp; Analysis Tool</a></li>
+  </ul></li>
+  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages">R Packages</a>
+  <ul class="collapse">
+  <li><a href="#reslr-relative-sea-level-modelling" id="toc-reslr-relative-sea-level-modelling" class="nav-link" data-scroll-target="#reslr-relative-sea-level-modelling"><code>reslr</code> – Relative Sea Level Modelling</a></li>
+  <li><a href="#geslar-gesla-tidal-data-tools" id="toc-geslar-gesla-tidal-data-tools" class="nav-link" data-scroll-target="#geslar-gesla-tidal-data-tools"><code>geslaR</code> – GESLA Tidal Data Tools</a></li>
+  </ul></li>
+  <li><a href="#key-publications" id="toc-key-publications" class="nav-link" data-scroll-target="#key-publications">Key Publications</a>
+  <ul class="collapse">
+  <li><a href="#a-noisy-input-generalized-additive-model-for-relative-sea-level-change" id="toc-a-noisy-input-generalized-additive-model-for-relative-sea-level-change" class="nav-link" data-scroll-target="#a-noisy-input-generalized-additive-model-for-relative-sea-level-change">A noisy-input generalized additive model for relative sea-level change</a></li>
+  <li><a href="#reslr-an-r-package-for-relative-sea-level-modelling" id="toc-reslr-an-r-package-for-relative-sea-level-modelling" class="nav-link" data-scroll-target="#reslr-an-r-package-for-relative-sea-level-modelling">reslr: An R Package for Relative Sea Level Modelling</a></li>
+  <li><a href="#two-centuries-of-relative-sea-level-rise-in-dublin-ireland" id="toc-two-centuries-of-relative-sea-level-rise-in-dublin-ireland" class="nav-link" data-scroll-target="#two-centuries-of-relative-sea-level-rise-in-dublin-ireland">Two Centuries of Relative Sea-Level Rise in Dublin, Ireland</a></li>
+  <li><a href="#a-bayesian-time-series-model-for-reconstructing-hydroclimate" id="toc-a-bayesian-time-series-model-for-reconstructing-hydroclimate" class="nav-link" data-scroll-target="#a-bayesian-time-series-model-for-reconstructing-hydroclimate">A Bayesian time series model for reconstructing hydroclimate</a></li>
+  </ul></li>
+  <li><a href="#preprints-under-reveiw" id="toc-preprints-under-reveiw" class="nav-link" data-scroll-target="#preprints-under-reveiw">Preprints (under reveiw)</a>
+  <ul class="collapse">
+  <li><a href="#a-scalable-bayesian-spatiotemporal-model-for-water-level-predictions-using-a-nearest-neighbor-gaussian-process-approach" id="toc-a-scalable-bayesian-spatiotemporal-model-for-water-level-predictions-using-a-nearest-neighbor-gaussian-process-approach" class="nav-link" data-scroll-target="#a-scalable-bayesian-spatiotemporal-model-for-water-level-predictions-using-a-nearest-neighbor-gaussian-process-approach">A scalable Bayesian spatiotemporal model for water level predictions using a nearest neighbor Gaussian process approach</a></li>
+  </ul></li>
+  <li><a href="#grant-acknowledgement" id="toc-grant-acknowledgement" class="nav-link" data-scroll-target="#grant-acknowledgement">Grant Acknowledgement</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">ExStrEAms</h1>
+<h1 class="title">ExStrEAms: Extreme Sea Level and Surge Analysis Resources</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-right">
 
     
   
@@ -128,11 +158,114 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>reslr: An R package for relative sea level modelling, Maeve Upton,<a href="https://maeveupton.github.io/reslr/">reslr package</a> <a href="https://drive.google.com/drive/folders/1O5wkqUyeNZbEw7XuR7UWGELwwWK9kBNY?usp=sharing">Workshop Materials</a></p>
-<p>geslaR &amp; Extremes Analysis in R, Fernando Mayer, <a href="https://eireextremes.github.io/geslaR/">geslaR package</a>, <a href="https://fernandomayer.notion.site/Introduction-to-INLA-1faa313a65a5806ab06edc559f560286">Workshop Materials</a></p>
+<p><strong>ExStrEAms</strong> is a curated collection of tools and interactive applications developed as part of ongoing research into extreme sea level and storm surge events, with a focus on Ireland and the surrounding coastal regions. These resources are intended to support climate resilience and coastal risk assessments.</p>
+<section id="interactive-tools" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-tools">Interactive Tools</h2>
+<section id="ireland-surge-analysis-tool" class="level3">
+<h3 class="anchored" data-anchor-id="ireland-surge-analysis-tool"><a href="https://sealevelresearch.shinyapps.io/IrelandSurge/">Ireland Surge Analysis Tool</a></h3>
+<p>This interactive app enables users to:</p>
+<ul>
+<li><p>Visualize sea level surges across Irish coastal locations.</p></li>
+<li><p>Apply statistical methods for extreme value analysis using the <code>extRemes</code> R package.</p></li>
+<li><p>Estimate return levels and exceedance frequencies.</p></li>
+</ul>
+<p><img src="images/Screenshot 2025-06-13 at 21.09.14.png" class="img-fluid"></p>
+</section>
+<section id="geslar-data-viewer-analysis-tool" class="level3">
+<h3 class="anchored" data-anchor-id="geslar-data-viewer-analysis-tool"><a href="https://sealevelresearch.shinyapps.io/geslaR-app/">geslaR Data Viewer &amp; Analysis Tool</a></h3>
+<p>An interactive app built on the <a href="https://eireextremes.github.io/geslaR/"><code>geslaR</code></a> package for exploring and analyzing the GESLA dataset.</p>
+<p>Key features:</p>
+<ul>
+<li><p>Visual exploration of tide gauge records from the Global Extreme Sea Level Analysis (GESLA) project.</p></li>
+<li><p>Filtering by station metadata and data quality indicators.</p></li>
+<li><p>Download location specific data for further analysis.</p></li>
+</ul>
+<p><img src="images/Screenshot 2025-06-13 at 21.20.41.png" class="img-fluid"></p>
+<hr>
+</section>
+</section>
+<section id="r-packages" class="level2">
+<h2 class="anchored" data-anchor-id="r-packages">R Packages</h2>
+<section id="reslr-relative-sea-level-modelling" class="level3">
+<h3 class="anchored" data-anchor-id="reslr-relative-sea-level-modelling"><a href="https://maeveupton.github.io/reslr/"><code>reslr</code></a> – Relative Sea Level Modelling</h3>
+<p><strong>Author:</strong> Maeve Upton<br>
+The <code>reslr</code> package provides functions and tools for reconstructing and modeling <strong>relative sea level change</strong> using flexible statistical models.</p>
+<ul>
+<li>Tools for Gaussian Process regression and temporal uncertainty.</li>
+<li>User-friendly functions for coastal paleoclimate studies.</li>
+</ul>
+<p>➡️ Visit the <a href="https://maeveupton.github.io/reslr/"><code>reslr</code> package website</a></p>
+<hr>
+</section>
+<section id="geslar-gesla-tidal-data-tools" class="level3">
+<h3 class="anchored" data-anchor-id="geslar-gesla-tidal-data-tools"><a href="https://eireextremes.github.io/geslaR/"><code>geslaR</code></a> – GESLA Tidal Data Tools</h3>
+<p><strong>Author:</strong> Fernando Mayer<br>
+The <code>geslaR</code> package provides streamlined access and tools to work with GESLA (Global Extreme Sea Level Analysis) data.</p>
+<ul>
+<li>Easily download and clean GESLA files.</li>
+<li>Visualize and prepare data for extreme analysis.</li>
+</ul>
+<p>➡️ Visit the <a href="https://eireextremes.github.io/geslaR/"><code>geslaR</code> package site</a></p>
+<hr>
+</section>
+</section>
+<section id="key-publications" class="level2">
+<h2 class="anchored" data-anchor-id="key-publications">Key Publications</h2>
+<section id="a-noisy-input-generalized-additive-model-for-relative-sea-level-change" class="level3">
+<h3 class="anchored" data-anchor-id="a-noisy-input-generalized-additive-model-for-relative-sea-level-change">A noisy-input generalized additive model for relative sea-level change</h3>
+<ul>
+<li><p><strong>Citation:</strong> Maeve Upton, Andrew Parnell, Andrew Kemp, Erica Ashe, Gerard McCarthy, Niamh Cahill, A noisy-input generalized additive model for relative sea-level change along the Atlantic coast of North America, Journal of the Royal Statistical Society Series C: Applied Statistics, Volume 74, Issue 1, January 2025, Pages 34–82, https://doi.org/10.1093/jrsssc/qlae044</p></li>
+<li><p><strong>Summary:</strong> Introduces a <strong>Bayesian spatial–temporal generalized additive model</strong> designed to analyze regional relative sea-level (RSL) trends with noisy inputs and robust uncertainty estimation. :contentReference<span data-index="1">oaicite:1</span></p></li>
+</ul>
+<p>Check out the <a href="https://academic.oup.com/jrsssc/article/74/1/34/7756353#499919970">paper</a></p>
+<hr>
+</section>
+<section id="reslr-an-r-package-for-relative-sea-level-modelling" class="level3">
+<h3 class="anchored" data-anchor-id="reslr-an-r-package-for-relative-sea-level-modelling">reslr: An R Package for Relative Sea Level Modelling</h3>
+<ul>
+<li><p><strong>Citation:</strong> Maeve Upton, Andrew Parnell, Niamh Cahill, “reslr: An R Package for Relative Sea Level Modelling”, The R Journal, 2025</p></li>
+<li><p><strong>Summary:</strong> An R package to perform Bayesian modelling of relative sea level data. Includes a variety of different statistical models previously proposed in the literature, with a unifying framework for loading data, fitting models, and summarising the results.</p></li>
+</ul>
+<p>Check out the <a href="https://journal.r-project.org/articles/RJ-2024-018/">paper</a></p>
+<hr>
+</section>
+<section id="two-centuries-of-relative-sea-level-rise-in-dublin-ireland" class="level3">
+<h3 class="anchored" data-anchor-id="two-centuries-of-relative-sea-level-rise-in-dublin-ireland">Two Centuries of Relative Sea-Level Rise in Dublin, Ireland</h3>
+<ul>
+<li><p><strong>Citation:</strong> Roseby, Z.A., Southall, K., Alvarez-Agoues, F., Cahill, N., McCarthy, G.D. and Edwards, R.J. (2023) ‘Two Centuries of Relative Sea-Level Rise in Dublin, Ireland, Reconstructed by Geological Tide Gauge’, Open Quaternary, 9(1), p.&nbsp;3. Available at: https://doi.org/10.5334/oq.121.</p></li>
+<li><p><strong>Summary:</strong> We demonstrate the utility and reproducibility of the saltmarsh foraminifera-based ‘geological tide gauge’ (GTG) approach by developing two independent records of relative sea-level (RSL) change for Dublin, Ireland. Our records, recovered from two different saltmarshes, indicate that RSL rose at a century-scale rate of 1.5 ± 0.9 mm yr–1 over the last 200 years.</p></li>
+</ul>
+<p>Check out the <a href="https://openquaternary.com/articles/10.5334/oq.121">paper</a></p>
+<hr>
+</section>
+<section id="a-bayesian-time-series-model-for-reconstructing-hydroclimate" class="level3">
+<h3 class="anchored" data-anchor-id="a-bayesian-time-series-model-for-reconstructing-hydroclimate">A Bayesian time series model for reconstructing hydroclimate</h3>
+<ul>
+<li><p><strong>Citation:</strong> Cahill, N., Croke, J., Campbell, M., Hughes, K., Vitkovsky, J., Kilgallen, J. E., &amp; Parnell, A. (2023). A Bayesian time series model for reconstructing hydroclimate from multiple proxies. Environmetrics, 34(4), e2786. https://doi.org/10.1002/env.2786</p></li>
+<li><p><strong>Summary:</strong> A Bayesian model which produces probabilistic reconstructions of hydroclimatic variability.The model provides a standardized approach to hydroclimate reconstruction using multiple palaeoclimate proxy records derived from natural archives such as speleothems, ice cores and tree rings. The method combines time-series modeling with inverse prediction to quantify the relationships between a given hydroclimate index and relevant proxies over an instrumental period and subsequently reconstruct the hydroclimate back through time.</p></li>
+</ul>
+<p>Check out the <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/env.2786">paper</a></p>
+<hr>
+</section>
+</section>
+<section id="preprints-under-reveiw" class="level2">
+<h2 class="anchored" data-anchor-id="preprints-under-reveiw">Preprints (under reveiw)</h2>
+<section id="a-scalable-bayesian-spatiotemporal-model-for-water-level-predictions-using-a-nearest-neighbor-gaussian-process-approach" class="level3">
+<h3 class="anchored" data-anchor-id="a-scalable-bayesian-spatiotemporal-model-for-water-level-predictions-using-a-nearest-neighbor-gaussian-process-approach">A scalable Bayesian spatiotemporal model for water level predictions using a nearest neighbor Gaussian process approach</h3>
+<ul>
+<li><p><strong>Citation:</strong> Nagahama, V. H., Sweeney, J., &amp; Cahill, N. (2025). A scalable Bayesian spatiotemporal model for water level predictions using a nearest neighbor Gaussian process approach (Version 2). arXiv. https://doi.org/10.48550/arXiv.2412.06934</p></li>
+<li><p><strong>Summary:</strong> A scalable Bayesian model for predicting river water levels across space and time. The model enables accurate and efficient forecasting by leveraging a Nearest Neighbor Gaussian Process (NNGP) framework, designed to handle large datasets. It incorporates spatial and temporal structure while addressing the computational challenges of standard Gaussian Processes. The method applies to daily river level observations from multiple monitoring stations, providing both future predictions and spatial interpolations at unmeasured locations. Uncertainty is quantified through the Bayesian framework.</p></li>
+</ul>
+<p>Check out the <a href="https://arxiv.org/abs/2412.06934">paper</a></p>
+</section>
+</section>
+<section id="grant-acknowledgement" class="level2">
+<h2 class="anchored" data-anchor-id="grant-acknowledgement">Grant Acknowledgement</h2>
+<p>This work has emanated from research conducted with the financial support of <strong>Taighde Éireann – Research Ireland</strong>, and co-funded by the <strong>Geological Survey Ireland (GSI)</strong>, under Grant Number <strong>20/FFP-P/8610</strong>.</p>
 <hr>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

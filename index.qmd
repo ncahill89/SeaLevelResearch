@@ -1,14 +1,135 @@
 ---
-title: " ExStrEAms"
+title: "ExStrEAms: Extreme Sea Level and Surge Analysis Resources"
 format:
   html:
+    theme: flatly
+    toc: true
+    toc-location: left
     link-external-icon: true
     link-external-newwindow: true
+    css: styles.css
+    page-layout: full
+    include-after-body: footer.html
 ---
 
+**ExStrEAms** is a curated collection of tools and interactive applications developed as part of ongoing research into extreme sea level and storm surge events, with a focus on Ireland and the surrounding coastal regions. These resources are intended to support climate resilience and coastal risk assessments.
 
-reslr: An R package for relative sea level modelling, Maeve Upton,[reslr package](https://maeveupton.github.io/reslr/)  [Workshop Materials](https://drive.google.com/drive/folders/1O5wkqUyeNZbEw7XuR7UWGELwwWK9kBNY?usp=sharing)  
+## Interactive Tools
 
- geslaR & Extremes Analysis in R, Fernando Mayer, [geslaR package](https://eireextremes.github.io/geslaR/), [Workshop Materials](https://fernandomayer.notion.site/Introduction-to-INLA-1faa313a65a5806ab06edc559f560286)
-                                                                                                                   
+### [Ireland Surge Analysis Tool](https://sealevelresearch.shinyapps.io/IrelandSurge/)
+
+This interactive app enables users to: 
+
+- Visualize sea level surges across Irish coastal locations. 
+
+- Apply statistical methods for extreme value analysis using the `extRemes` R package. 
+
+- Estimate return levels and exceedance frequencies.
+
+![](images/Screenshot%202025-06-13%20at%2021.09.14.png)
+
+
+### [geslaR Data Viewer & Analysis Tool](https://sealevelresearch.shinyapps.io/geslaR-app/)
+
+An interactive app built on the [`geslaR`](https://eireextremes.github.io/geslaR/) package for exploring and analyzing the GESLA dataset.
+
+Key features: 
+
+- Visual exploration of tide gauge records from the Global Extreme Sea Level Analysis (GESLA) project. 
+
+- Filtering by station metadata and data quality indicators.
+
+- Download location specific data for further analysis.
+
+![](images/Screenshot 2025-06-13 at 21.20.41.png)
+
+
+------------------------------------------------------------------------
+
+## R Packages
+
+### [`reslr`](https://maeveupton.github.io/reslr/) – Relative Sea Level Modelling
+
+**Author:** Maeve Upton\
+The `reslr` package provides functions and tools for reconstructing and modeling **relative sea level change** using flexible statistical models.
+
+-   Tools for Gaussian Process regression and temporal uncertainty.
+-   User-friendly functions for coastal paleoclimate studies.
+
+➡️ Visit the [`reslr` package website](https://maeveupton.github.io/reslr/)
+
+------------------------------------------------------------------------
+
+### [`geslaR`](https://eireextremes.github.io/geslaR/) – GESLA Tidal Data Tools
+
+**Author:** Fernando Mayer\
+The `geslaR` package provides streamlined access and tools to work with GESLA (Global Extreme Sea Level Analysis) data.
+
+-   Easily download and clean GESLA files.
+-   Visualize and prepare data for extreme analysis.
+
+➡️ Visit the [`geslaR` package site](https://eireextremes.github.io/geslaR/)
+
+------------------------------------------------------------------------
+
+## Key Publications
+
+### A noisy-input generalized additive model for relative sea-level change 
+
+- **Citation:** Maeve Upton, Andrew Parnell, Andrew Kemp, Erica Ashe, Gerard McCarthy, Niamh Cahill, A noisy-input generalized additive model for relative sea-level change along the Atlantic coast of North America, Journal of the Royal Statistical Society Series C: Applied Statistics, Volume 74, Issue 1, January 2025, Pages 34–82, https://doi.org/10.1093/jrsssc/qlae044
+
+- **Summary:** Introduces a **Bayesian spatial–temporal generalized additive model** designed to analyze regional relative sea-level (RSL) trends with noisy inputs and robust uncertainty estimation. :contentReference[oaicite:1]{index=1}  
+
+
+Check out the [paper](https://academic.oup.com/jrsssc/article/74/1/34/7756353#499919970)
+
+---
+
+### reslr: An R Package for Relative Sea Level Modelling
+
+- **Citation:** Maeve Upton, Andrew Parnell, Niamh Cahill, "reslr: An R Package for Relative Sea Level Modelling", The R Journal, 2025
+
+- **Summary:** An R package to perform Bayesian modelling of relative sea level data. Includes a variety of different statistical models previously proposed in the literature, with a unifying framework for loading data, fitting models, and summarising the results. 
+
+Check out the [paper](https://journal.r-project.org/articles/RJ-2024-018/)
+
+---
+
+### Two Centuries of Relative Sea-Level Rise in Dublin, Ireland
+
+- **Citation:** Roseby, Z.A., Southall, K., Alvarez-Agoues, F., Cahill, N., McCarthy, G.D. and Edwards, R.J. (2023) ‘Two Centuries of Relative Sea-Level Rise in Dublin, Ireland, Reconstructed by Geological Tide Gauge’, Open Quaternary, 9(1), p. 3. Available at: https://doi.org/10.5334/oq.121.
+
+- **Summary:** We demonstrate the utility and reproducibility of the saltmarsh foraminifera-based ‘geological tide gauge’ (GTG) approach by developing two independent records of relative sea-level (RSL) change for Dublin, Ireland. Our records, recovered from two different saltmarshes, indicate that RSL rose at a century-scale rate of 1.5 ± 0.9 mm yr–1 over the last 200 years. 
+
+Check out the [paper](https://openquaternary.com/articles/10.5334/oq.121)
+
+---
+
+### A Bayesian time series model for reconstructing hydroclimate 
+
+- **Citation:** Cahill, N., Croke, J., Campbell, M., Hughes, K., Vitkovsky, J., Kilgallen, J. E., & Parnell, A. (2023). A Bayesian time series model for reconstructing hydroclimate from multiple proxies. Environmetrics, 34(4), e2786. https://doi.org/10.1002/env.2786
+
+- **Summary:** A Bayesian model which produces probabilistic reconstructions of hydroclimatic variability.The model provides a standardized approach to hydroclimate reconstruction using multiple palaeoclimate proxy records derived from natural archives such as speleothems, ice cores and tree rings. The method combines time-series modeling with inverse prediction to quantify the relationships between a given hydroclimate index and relevant proxies over an instrumental period and subsequently reconstruct the hydroclimate back through time.
+
+Check out the [paper](https://onlinelibrary.wiley.com/doi/full/10.1002/env.2786)
+
+
+
+------------------------------------------------------------------------
+
+## Preprints (under reveiw)
+
+### A scalable Bayesian spatiotemporal model for water level predictions using a nearest neighbor Gaussian process approach
+
+- **Citation:** Nagahama, V. H., Sweeney, J., & Cahill, N. (2025). A scalable Bayesian spatiotemporal model for water level predictions using a nearest neighbor Gaussian process approach (Version 2). arXiv. https://doi.org/10.48550/arXiv.2412.06934
+
+- **Summary:** A scalable Bayesian model for predicting river water levels across space and time. The model enables accurate and efficient forecasting by leveraging a Nearest Neighbor Gaussian Process (NNGP) framework, designed to handle large datasets. It incorporates spatial and temporal structure while addressing the computational challenges of standard Gaussian Processes. The method applies to daily river level observations from multiple monitoring stations, providing both future predictions and spatial interpolations at unmeasured locations. Uncertainty is quantified through the Bayesian framework.
+
+Check out the [paper](https://arxiv.org/abs/2412.06934)
+
+## Grant Acknowledgement
+
+This work has emanated from research conducted with the financial support of
+**Taighde Éireann – Research Ireland**, and co-funded by the **Geological Survey Ireland (GSI)**, under Grant Number **20/FFP-P/8610**.
+
 ------------------------------------------------------------------------
