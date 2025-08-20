@@ -138,6 +138,13 @@ Check out the [paper](https://onlinelibrary.wiley.com/doi/full/10.1002/env.2786)
 
 Check out the [paper](https://arxiv.org/abs/2412.06934)
 
+### A Bayesian hierarchical spatio-temporal model with physical barriers for extreme sea-level prediction in Ireland
+
+- **Citation:** Mayer, F. P. & Cahill, N. (2025). A Bayesian hierarchical spatio-temporal model with physical barriers for extreme sea-level prediction in Ireland. Environmetrics. *Under review*.
+
+- **Summary:** This paper develops a Bayesian hierarchical spatio-temporal model to estimate extreme sea levels in Ireland, using data from 26 Irish tide gauges and 21 from the West coast of Great Britain. Annual maxima (1961–2021) are modelled with the blended Generalised Extreme Value (bGEV) distribution, incorporating spatial dependence via a Matérn correlation and coastline barriers through the SPDE approach, while temporal trends are captured with a random walk. Predictions at ungauged sites are made using a coastal mesh. Results show rising extreme sea levels, with the East coast most at risk. The model better reflects coastal processes, supporting flood risk management and policymaking.
+
+
 ## Grant Acknowledgement
 
 This work has emanated from research conducted with the financial support of
